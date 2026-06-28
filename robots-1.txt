@@ -1,0 +1,90 @@
+# ================================================================
+# robots.txt — Aero Software Solutions
+# ▸ ضع هذا الملف في جذر موقعك (root directory)
+#   مثال: https://YOUR-DOMAIN.com/robots.txt
+# ================================================================
+
+# السماح لجميع محركات البحث بالصفحات العامة
+User-agent: *
+Allow: /
+
+# ⚠️ ملاحظة أمنية: لا تذكر مسارات الإدارة هنا — robots.txt ملف عام
+# حماية مسارات الإدارة تتم على مستوى السيرفر (htaccess / nginx / firewall)
+# وليس بالاعتماد على robots.txt وحده
+
+# ================================================================
+# Google
+# ================================================================
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+# ================================================================
+# Bing / Microsoft
+# ================================================================
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: msnbot
+Allow: /
+
+# ================================================================
+# Yandex
+# ================================================================
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+# ================================================================
+# السماح لبوتات الشبكات الاجتماعية (OG preview)
+# ================================================================
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# ================================================================
+# منع البوتات الضارة والمزعجة
+# ================================================================
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# ================================================================
+# Sitemap — أضف رابط الـ sitemap بعد إنشائه
+# ================================================================
+Sitemap: https://YOUR-DOMAIN.com/sitemap.xml
